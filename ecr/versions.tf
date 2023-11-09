@@ -7,4 +7,12 @@ terraform {
       version = "5.22.0"
     }
   }
+
+  cloud {
+    organization = "padoca-org"
+
+    workspaces {
+      name = "padoca-workspace"
+    }
+  }
 }
